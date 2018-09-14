@@ -1,0 +1,42 @@
+.control-panel {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  opacity: 0.5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.control-panel__button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.control-panel__button:hover {
+  opacity: 1;
+  background: #555;
+}
+
+.scan-viewer {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  user-select: none;
+  overflow: hidden;
+}
+
+.scan-viewer img {
+  width: 100%;
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 200;
+  top: 0;
+}
