@@ -27,6 +27,10 @@
   overflow: hidden;
 }
 
+.scan-viewer div {
+  transition: transform 0.01s ease-in-out 0s;
+}
+
 .scan-viewer img {
   width: 100%;
 }

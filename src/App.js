@@ -8,6 +8,9 @@ import './App.css';
 
 const imagesData = { '1': Image1, '2': Image2 };
 let selectedImageId = '1';
+const minZoom = 1;
+const maxZoom = 10;
+const scrollVelocity = 0.2;
 
 class App extends Component {
     state = {
@@ -119,6 +122,9 @@ class App extends Component {
                             ref="prismaZoom"
                             topBoundary={120}
                             onDoubleClick={this.onDoubleClickOnCard}
+                            scrollVelocity={scrollVelocity}
+                            minZoom={minZoom}
+                            maxZoom={maxZoom}
                         >
                             <img
                                 src={selectedImageUrl}
